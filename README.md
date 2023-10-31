@@ -41,10 +41,11 @@ Dataset yang saya gunakan berasal jadi Kaggle yang berisi harga Emas di China. D
 - amount (int64) : menunjukan jumlah emas
 
 ``` python
-plt.figure(figsize=(10,8))
-sns.heatmap(df.corr(),annot=True)
+plt.figure(figsize=(15,5))
+sns.barplot(x=Open['Open'], y=Open['count'], color='blue')
 ```
-![Alt text](UTS4.png)
+![Alt text](UTS3.png)
+
 ``` python
 figure(figsize=(12, 4), dpi=80)
 sns.histplot(data=a,x='pct_change',kde=True)
