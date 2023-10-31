@@ -47,7 +47,7 @@ Open = Open.rename(columns={'change':'count'})
 plt.figure(figsize=(15,5))
 sns.barplot(x=Open['Open'], y=Open['count'], color='blue'
 ```
-![Alt text]()
+![Alt text](UTS3.png)
 
 
 
