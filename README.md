@@ -52,9 +52,7 @@ sns.barplot(x=Open['Open'], y=Open['count'], color='blue'
 plt.figure(figsize=(10,8))
 sns.heatmap(df.corr(),annot=True)
 ```
-
-
-
+![Alt text](UTS4.png)
 
 ## Data Preparation
 ### Data Collection
