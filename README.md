@@ -39,15 +39,7 @@ Dataset yang saya gunakan berasal jadi Kaggle yang berisi harga Emas di China. D
 - change (float64) : menunjukan perubahan harga emas
 - vol (float64) : menunjukan volume berat emas
 - amount (int64) : menunjukan jumlah emas
-``` python
-Open = df.groupby('Open').count()[['change']].sort_values(by='change').reset_index()
-Open = Open.rename(columns={'change':'count'})
-```
-``` python
-plt.figure(figsize=(15,5))
-sns.barplot(x=Open['Open'], y=Open['count'], color='blue'
-```
-![Alt text](UTS3.png)
+
 ``` python
 plt.figure(figsize=(10,8))
 sns.heatmap(df.corr(),annot=True)
