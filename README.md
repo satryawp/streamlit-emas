@@ -53,7 +53,11 @@ plt.figure(figsize=(10,8))
 sns.heatmap(df.corr(),annot=True)
 ```
 ![Alt text](UTS4.png)
-
+``` python
+figure(figsize=(12, 4), dpi=80)
+sns.histplot(data=a,x='pct_change',kde=True)
+```
+![Alt text](UTS
 ## Data Preparation
 ### Data Collection
 Untuk data collection ini, saya mendapatkan dataset yang nantinya digunakan dari website kaggle dengan nama dataset Gold Price of China Full Data (2015-2022), jika anda tertarik dengan datasetnya, anda bisa click link diatas.
