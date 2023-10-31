@@ -29,7 +29,7 @@ mencari solusi untuk memudahkan orang-orang yang mencari patokan harga emas di c
 Dataset yang saya gunakan berasal jadi Kaggle yang berisi harga Emas di China. Dataset ini merupakan sekumpulan data yang dikumpulkan dari suatu pengusaha emas disana yang mengupload harga emas dari tahun 2015 sampai 2022. Dataset ini mengandung 1,947 baris dan lebih dari 11 columns setelah dilakukan data cleaning..<br> 
 [Gold Price of China Full Data (2015-2022)][kaggle datasets download -d liqiang2022/gold-price-of-china-full-data-20152022]
 
-### Variabel-variabel pada Gold Price of China Full Data (2015-2022 Prediction Dataset adalah sebagai berikut:
+### Variabel-variabel pada Gold Price of China Full Data (2015-2022) Prediction Dataset adalah sebagai berikut:
 
 - trade_date (int64) : Menunjukan tanggal beli emas 
 - close (float64) : menunjukan harga akhir emas
@@ -48,6 +48,11 @@ plt.figure(figsize=(15,5))
 sns.barplot(x=Open['Open'], y=Open['count'], color='blue'
 ```
 ![Alt text](UTS3.png)
+``` python
+plt.figure(figsize=(10,8))
+sns.heatmap(df.corr(),annot=True)
+```
+
 
 
 
