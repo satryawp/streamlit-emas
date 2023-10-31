@@ -43,7 +43,11 @@ Dataset yang saya gunakan berasal jadi Kaggle yang berisi harga Emas di China. D
 Open = df.groupby('Open').count()[['change']].sort_values(by='change').reset_index()
 Open = Open.rename(columns={'change':'count'})
 ```
-
+``` python
+plt.figure(figsize=(15,5))
+sns.barplot(x=Open['Open'], y=Open['count'], color='blue'
+```
+![Alt text]()
 
 
 
